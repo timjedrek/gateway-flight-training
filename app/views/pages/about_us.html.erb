@@ -1,0 +1,60 @@
+<%# Head / Meta Data %>
+<% title("About Right Rudder Marketing") %>
+<% meta_description("The About Us page for the Right Rudder Marketing Website") %>
+<%# meta_keywords("flight school marketing, website design for flight schools, grow flight school business, aviation marketing, website design for flying club fbo, tim jedrek") %>
+<%# og_image(image_url("meta_pic_rrm.webp")) %>
+<%# twitter_image(image_url("meta_pic_rrm_twitter.webp")) %>
+
+<!--Set Page font size and limit sticky-->
+<div class="text-lg">
+  <%= render "shared/navbar" %>
+  <section class="bg-slate-100">
+    <div class="flex flex-col lg:flex-row items-center justify-center">
+      <!--Text-->
+      <div class="lg:w-1/2 flex flex-col items-end">
+        <!--Container for text so I can align them-->
+        <div class="lg:w-3/4 text-center lg:text-left pt-20 lg:pt-10">
+          <div class="pb-3 w-full">ABOUT US</div>
+          <h1 class="font-bold text-5xl pb-8">Meet Tim Jedrek.</h1>
+          <!--Mobile image-->
+          <%= image_tag "ppl_tim.webp", class: "lg:hidden"%>
+          <div class="italic text-slate-500 text-center text-sm px-5 lg:hidden pb-10">
+            Tim Jedrek posing for a picture <br>after passing his private pilot checkride
+          </div>
+          
+          <div class="text-base text-left px-10 lg:pl-0 lg:pr-8">
+            <p class="pb-5">
+              I'm the founder and pilot in command of Right Rudder Marketing. I'm leading the strategic forces behind Right Rudder Marketing.
+            </p>
+            <p class="pb-5">
+              I'm looking forward to bringing the decades of experience I have in computer science and business leadership to my one true love, aviation.
+            </p>
+            <p class="pb-5">
+              The flight school community is underserved when it comes to their digital marketing.  Many schools rely on local web designers or big name low value digital marketing companies to advertise online, but these marketing providers just don't really understand the pilot training process.
+            </p>
+            <p class="pb-5">
+              Right Rudder Marketing is a <strong>pilot owned</strong> modern professional digital marketing agency that delivers real quality.
+            </p>
+            <p class="font-semibold text-xl pb-5">
+              Our flight school specialized digital marketing team just does everything better than everyone else.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Desktop Picture-->
+      <div class="lg:w-1/2 py-20 lg:flex flex-col items-center hidden">
+        <div class="flex flex-col items-center lg:w-1/2">
+          <%= image_tag "ppl_tim.webp", class: "lg:rounded-xl"%>
+          <div class="italic text-slate-500 text-center text-sm">
+            Tim Jedrek posing for a picture <br>after passing his private pilot checkride
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!--CTA-->
+<%= render "shared/cta1"%>
+<!--Footer-->
+<%= render "shared/footer"%>
