@@ -131,7 +131,7 @@
       </div>
       <div class="lg:w-1/2 flex flex-col justify-center">
         <h2 class="font-semibold text-2xl text-center pb-10 px-5">Knowlegeable Experienced Flight Instructors</h2>
-        <p class="px-10">Our team makes safety our primary concern, to make you the best pilot that you can be as well as the safest pilot that you can be.</p>
+        <p class="px-10">Our team makes safety our primary concern so you can the best pilot that you can be as well as the safest pilot that you can be.</p>
       </div>
     </div>
 
@@ -197,9 +197,118 @@
         <p class="pb-5">Years creating new pilots</p>
       </div>
     </div>
+  </section>
 
+  <section class="bg-slate-100">
 
+    <div class="lg:my-24 container mx-auto flex flex-col lg:flex-row shadow-sm overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
+      <div class="relative w-full py-2 lg:py-24 bg-slate-100 lg:bg-red-900 lg:w-1/2 flex flex-col item-center justify-center">
 
+        <div class="absolute top-0 left-0 z-10 w-16 h-16 lg:w-40 lg:h-40 lg:ml-20 lg:mt-24"></div>
+
+        <div class="relative text-3xl font-bold lg:text-5xl pt-8 pb-2 px-6 lg:py-6 lg:px-1 lg:w-64 lg:mx-auto text-red-900 lg:text-white leading-tight tracking-tight mb-0 z-20">
+          <span class="">What Our</span>
+          <span class="">Students</span>
+          <span class="">Say!</span>
+        </div>
+
+        <!--Desktop buttons-->
+        <div class="absolute right-0 bottom-0 mr-4 mb-4 hidden lg:block">
+          <button class="rounded-l-lg border-r bg-slate-100 text-slate-500 focus:outline-none hover:text-red-500 font-bold w-12 h-10" x-on:click="testimonialActive = testimonialActive === 1 ? 3 : testimonialActive - 1">
+            &#8592;
+          </button><button class="rounded-r-lg bg-slate-100 text-slate-500 focus:outline-none hover:text-red-500 font-bold w-12 h-10" x-on:click="testimonialActive = testimonialActive >= 3 ? 1 : testimonialActive + 1">
+            &#8594;
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 lg:w-1/2">
+        <div class="flex flex-col h-full relative">
+
+          <!--Quote marks-->
+          <div class="absolute top-0 left-0 mt-3 ml-10 lg:mt-5 lg:ml-12">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-red-200 fill-current w-12 h-12 lg:w-16 lg:h-16" viewBox="0 0 24 24">
+              <path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z" /></svg>
+          </div>
+
+          <div class="lg:h-72 h-72 relative z-10">
+            <div x-show="testimonialActive === 1"   x-transition.opacity  x-transition:enter.duration.500ms x-transition:leave.duration.400ms>
+              <p class="text-slate-600 serif font-normal italic pl-16 pr-12 py-6 lg:px-16 lg:py-10 text-xl lg:text-2xl" x-show.transition="testimonialActive == 1">
+                Knowledgeable Instructors. Welcoming environment. Well maintained airplane. Flexible schedule. I really appreciate the school and the team. They teach me a lot.
+              </p>
+            </div>
+
+            <div x-show="testimonialActive === 2"  x-transition.opacity  x-transition:enter.duration.500ms x-transition:leave.duration.400ms>
+              <p class="text-slate-600 serif font-normal italic pl-16 pr-12 py-6 lg:px-16 lg:py-10 text-xl lg:text-2xl" x-show.transition="testimonialActive == 2">
+                These guys are top notch. New facility, planes are newer, flight instructor was very knowledgeable and attentive to details.
+              </p>
+            </div>
+
+            <div x-show="testimonialActive === 3"  x-transition.opacity  x-transition:enter.duration.500ms x-transition:leave.duration.400ms>
+              <p class="text-slate-600 serif font-normal italic pl-16 pr-12 py-6 lg:px-16 lg:py-10 text-xl lg:text-2xl" x-show.transition="testimonialActive == 3">
+                I reached out to Brian Borton who runs the operation.  He and I worked to fulfill a dream I've always had since childhood.  I wanted to fly over the skies of St. Louis. I am extremely satisfied.  Great job guys.
+              </p>
+            </div>
+            <!--Phone buttons arrow-->
+            <div class="lg:hidden absolute bottom-10 w-full">
+              <div class="flex flex-row justify-between">
+                <button class=" fill-red-200 text-5xl font-bold w-12 h-32" x-on:click="testimonialActive = testimonialActive === 1 ? 3 : testimonialActive - 1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+                  </svg>
+                </button>
+                <button class="fill-red-200 text-5xl font-bold w-12 h-32" x-on:click="testimonialActive = testimonialActive >= 3 ? 1 : testimonialActive + 1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex my-4 justify-center items-center">
+            <button @click.prevent="testimonialActive = 1" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2" :class="{'h-12 w-12 opacity-25 bg-red-300 text-slate-600': testimonialActive != 1, 'h-16 w-16 opacity-100 bg-red-600 text-white': testimonialActive == 1 }">AA</button>
+            <button @click.prevent="testimonialActive = 2" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-red-600 rounded-full mx-2" :class="{'h-12 w-12 opacity-25 bg-red-300 text-slate-600': testimonialActive != 2, 'h-16 w-16 opacity-100 bg-red-600 text-white': testimonialActive == 2 }">MT</button>
+            <button @click.prevent="testimonialActive = 3" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-red-600 rounded-full mx-2" :class="{'h-12 w-12 opacity-25 bg-red-300 text-slate-600': testimonialActive != 3, 'h-16 w-16 opacity-100 bg-red-600 text-white': testimonialActive == 3 }">CM</button>
+          </div>
+
+          <div class="flex justify-center px-6 pt-2 pb-6 lg:py-6">
+            <div class="text-center flex flex-col items-center" x-show="testimonialActive == 1">
+              <h2 class="text-sm lg:text-base font-bold text-slate-700 leading-tight">Abdulrahman Almutairi</h2>
+              <div class="flex flex-row fill-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+              </div>
+            </div>
+
+            <div class="text-center flex flex-col items-center" x-show="testimonialActive == 2">
+              <h2 class="text-sm lg:text-base font-bold text-slate-700 leading-tight">Mike Tofari</h2>
+              <div class="flex flex-row fill-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+              </div>
+            </div>
+
+            <div class="text-center flex flex-col items-center" x-show="testimonialActive == 3">
+              <h2 class="text-sm lg:text-base font-bold text-slate-700 leading-tight">Charles May</h2>
+              <div class="flex flex-row fill-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <%= render "shared/associations"%>
 </div>
