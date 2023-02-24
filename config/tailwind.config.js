@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        gloock: ['Gloock', ...defaultTheme.fontFamily.serif]
       },
       keyframes: {
         //mobile

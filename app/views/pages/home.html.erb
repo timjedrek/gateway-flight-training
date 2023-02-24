@@ -8,6 +8,7 @@
 <!--Set Page font size and limit sticky-->
 <div class="text-lg">
   <%= render "shared/navbar" %>
+
   <!--Red header-->
   <section class="bg-red-900 text-white">
     <div class="flex flex-col items-center py-4 text-center">
@@ -34,11 +35,7 @@
     
     </div>
   </section>
-
-
-  
-
-
+  <!--Steps Section-->
   <section class="bg-slate-50 py-10">
     <h2 class="font-bold text-center text-3xl pb-10 px-5">
       First Time Here? Here's How to Become a Pilot
@@ -124,6 +121,20 @@
       <% end %>
 
     </div>
+  </section>
+
+  <section class="bg-red-900 text-white py-10">
+
+    <div class="flex flex-col lg:flex-row">
+      <div class="lg:w-1/2 flex flex-col justify-center">
+        <p class="text-4xl italic text-center font-gloock pb-10">"Safety in aviation through education"</p>
+      </div>
+      <div class="lg:w-1/2 flex flex-col justify-center">
+        <h2 class="font-semibold text-2xl text-center pb-10">Knowlegeable and Experienced Instructors</h2>
+        <p class="px-10">Our team makes safety our primary concern, to make you the best pilot that you can be as well as the safest pilot that you can be.</p>
+      </div>
+    </div>
+    
   </section>
   <%= render "shared/associations"%>
 </div>
