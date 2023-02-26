@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   # homepage
   root "pages#home"
   get 'intro_video_embed', to: "pages#intro_video_embed", as: :embed_video
+  get 'intro_video_embed_maint', to: "pages#intro_video_embed_maint", as: :embed_video_maint
   get 'newsletter_confirm', to: "newsletter_emails#confirm", as: :newsletter_confirm
 
   # Notams

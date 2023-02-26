@@ -321,8 +321,8 @@
       <!--Text-->
       <div class="w-4/5 lg:w-1/2 lg:px-20 lg:pb-0 pb-20" x-data>
         <h3 class="text-2xl font-semibold pb-5 text-red-800">Join the 1% of the population that are pilots</h3>
-        <p class="pb-5">This is your chance to join the aviation family and experience the world in a whole new lens.  Aviation is a tight knit community of knowledgeable and compassionate people who love the joy of flying.</p>
-        <p class="pb-5">Becoming a pilot is an accomplishment to be proud of.  You will be awarded with the priveledge of traveling in the skies.  A feat man could only have dreamt of a few hundred years ago.</p>
+        <p class="pb-5">This is your chance to join the aviation family and experience a whole new world.  Aviation is a tight knit community of knowledgeable and compassionate people who love the joy of flying.</p>
+        <p class="pb-5">Becoming a pilot is an accomplishment to be proud of.  You will be awarded with the priveledge of traveling in the skies.  A feat we could only have dreamt of a few hundred years ago.</p>
         <p class="pb-5">Open a new door of opportunity and embark on a new career and lifestlye.  Stop dreaming and start flying!</p>
         <div class="opacity-0 duration-[1500ms] translate-y-24 text-center w-full flex flex-col items-start" x-intersect="$el.classList.add('opacity-100', 'translate-y-1', 'z-0')">
           <%=link_to schedule_call_path do%>
@@ -400,6 +400,48 @@
       </div>
     </div>
     </div>
+  </section>
+  <section class="bg-red-900 text-white">
+    <div class="flex flex-col lg:flex-row py-20">
+      <div class="lg:w-1/2 flex flex-col items-center justify-center px-5">
+        <h2 class="text-3xl lg:text-5xl font-gloock font-bold italic text-center">Gateway is the best <br>in flight safety and education</h2>
+        <h3 class="text-xl font-semibold py-5">St. Louis Flight Training</h3>
+        <p class="lg:w-3/4">
+          The best aviation team at Creve Coeur Airport (1HO).  Our knowledgeable and experienced instructors comprises of pilots with ATP, Instrument Instructor, and Certified Flight Instructor certification with a combined total of more than 70,000 hours of total flight time.
+        </p>
+      </div>
+      <div class="lg:w-1/2 flex flex-col justify-center items-center">
+        <%= turbo_frame_tag "frame2", class: "w-full" do %>
+          <%= link_to embed_video_path, class: "" do%>
+            <div class="lg:w-4/5 mx-auto w-full aspect-vide bg-videothumb bg-cover bg-center">
+              <%= image_tag "youtube_embed_icon.webp", alt: "image placeholder for video", class: "lg:grayscale hover:grayscale-0 transition-all duration-500 "%>
+            </div>
+            <h4 class="text-center italic text-sm">Family testimonial of Devin, student pilot at Gateway</h4>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row-reverse pb-20">
+      <div class="lg:w-1/2 flex flex-col items-center justify-center px-5">
+        <h2 class="text-3xl lg:text-5xl font-gloock font-bold italic text-center">Meticulous Maintenance</h2>
+        <h3 class="text-xl font-semibold py-5">St. Louis Aviation Maintenance</h3>
+        <p class="lg:w-3/4">
+          The best aviation maintenance team at Creve Coeur Airport (1HO).  Our knowledgeable and experienced maintenance team comprises of mechanics with A&P and IA certification.  
+        </p>
+      </div>
+      <div class="lg:w-1/2 flex flex-col justify-center items-center">
+        <%= turbo_frame_tag "frame3", class: "w-full" do %>
+          <%= link_to embed_video_maint_path, class: "" do%>
+            <div class="lg:w-4/5 mx-auto w-full aspect-vide bg-videothumbmaint bg-cover bg-center">
+              <%= image_tag "youtube_embed_icon.webp", alt: "image placeholder for video", class: "lg:grayscale hover:grayscale-0 transition-all duration-500 "%>
+            </div>
+            <h4 class="text-center italic text-sm">Brian Borton, operations manager, on avionics and upgrades to aircraft</h4>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    
   </section>
   <%= render "shared/associations"%>
 </div>
