@@ -24,12 +24,12 @@
       <div class="lg:w-1/2 flex flex-col justify-center items-center pb-10">
         <h2 class="px-2 text-3xl text-center font-bold">Get Your <span class="text-red-600">FREE</span> Pilot Training Guide Book!</h2>
         <p class="px-5 py-7 lg:px-32 text-center">50 pages of how to get started on becoming a pilot.  We'll mail you this free booklet which explains everything you need to know for your pilot certificate.</p>
-        <%= button_to "Send me the free book!", "#", class: "uppercase bg-yellow-500 hover:bg-yellow-400 transition-all duration-300 text-white font-semibold rounded-lg text-center sm:text-lg lg:text-xl py-2 px-5"%>
+        <%= button_to "Send me the free book!", "#", class: "uppercase bg-yellow-500 hover:bg-yellow-400 hover:scale-105 transition-all duration-300 text-white font-semibold rounded-lg text-center sm:text-lg lg:text-xl py-2 px-5"%>
       </div>
       <!--pic section-->
       <div class="lg:w-1/2">
         <div class="grid place-items-center">
-          <%= image_tag "book-mockup.webp"%>
+          <%= image_tag "book-mockup.webp", alt: "Picture of our free how to be a pilot training guide"%>
         </div>
       </div>
     
@@ -275,7 +275,7 @@
 
           <div class="flex justify-center px-6 pt-2 pb-6 lg:py-6">
             <div class="text-center flex flex-col items-center" x-show="testimonialActive == 1">
-              <h2 class="text-sm lg:text-base font-bold text-slate-700 leading-tight">Abdulrahman Almutairi</h2>
+              <span class="text-sm lg:text-base font-bold text-slate-700 leading-tight">Abdulrahman Almutairi</span>
               <div class="flex flex-row fill-yellow-500">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
@@ -286,7 +286,7 @@
             </div>
 
             <div class="text-center flex flex-col items-center" x-show="testimonialActive == 2">
-              <h2 class="text-sm lg:text-base font-bold text-slate-700 leading-tight">Mike Tofari</h2>
+              <span class="text-sm lg:text-base font-bold text-slate-700 leading-tight">Mike Tofari</span>
               <div class="flex flex-row fill-yellow-500">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
@@ -297,7 +297,7 @@
             </div>
 
             <div class="text-center flex flex-col items-center" x-show="testimonialActive == 3">
-              <h2 class="text-sm lg:text-base font-bold text-slate-700 leading-tight">Charles May</h2>
+              <span class="text-sm lg:text-base font-bold text-slate-700 leading-tight">Charles May</span>
               <div class="flex flex-row fill-yellow-500">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
@@ -309,6 +309,96 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50">
+    <h2 class="font-bold text-4xl text-center py-10 px-10">Becoming a pilot will be the best decision you've ever made</h2>
+
+    <div class="">
+      <!--Step 1-->
+    <div class="flex flex-col lg:flex-row justify-center items-center pt-10 lg:py-10">
+      <!--Text-->
+      <div class="w-4/5 lg:w-1/2 lg:px-20 lg:pb-0 pb-20" x-data>
+        <h3 class="text-2xl font-semibold pb-5 text-red-800">Join the 1% of the population that are pilots</h3>
+        <p class="pb-5">This is your chance to join the aviation family and experience the world in a whole new lens.  Aviation is a tight knit community of knowledgeable and compassionate people who love the joy of flying.</p>
+        <p class="pb-5">Becoming a pilot is an accomplishment to be proud of.  You will be awarded with the priveledge of traveling in the skies.  A feat man could only have dreamt of a few hundred years ago.</p>
+        <p class="pb-5">Open a new door of opportunity and embark on a new career and lifestlye.  Stop dreaming and start flying!</p>
+        <div class="opacity-0 duration-[1500ms] translate-y-24 text-center w-full flex flex-col items-start" x-intersect="$el.classList.add('opacity-100', 'translate-y-1', 'z-0')">
+          <%=link_to schedule_call_path do%>
+            <div class="bg-yellow-500 font-semibold hover:bg-yellow-400 hover:scale-105 text-white rounded-lg text-center py-2 px-5 transition-all duration-300">
+              START TODAY
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <!--Picture-->
+      <div class="w-full lg:w-1/2 lg:px-20 grid place-items-center">
+        <%= image_tag "handshake.webp", alt:"Student pilot and instructor shaking hands after solo flight", class: "" %>
+      </div>
+    </div>
+
+    <!--Step 2-->
+    <div class="flex flex-col lg:flex-row-reverse justify-center items-center pt-10 lg:py-10 bg-slate-50">
+      <!--Text-->
+      <div class="w-4/5 lg:w-1/2 lg:px-20 pb-20 lg:pb-0" x-data>
+        <h3 class="text-2xl font-bold pb-5 text-red-800">A Million Dollar Career</h3>
+        <p class="pb-5">Don't let the opportunity slip by!  Now is the time to pursue a new career in aviation.  The demand for pilots is increasing every year.  The <%= link_to "Bureau of Labor Statistics", "https://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm", target: "blank", class: "text-red-800 hover:underline"%> reported that the average salary for airline pilots, copilots, and flight engineers was $202,180. </p>
+        <p class="pb-5">Pilot training is a finanical and time investment with a huge payoff.  Just last year, regional airlines have <%= link_to "increased pilot salaries", "https://www.cnbc.com/2022/06/13/american-airlines-regional-pilots-get-big-pay-hikes-as-competition-for-pilots-intensifies-.html", target: "blank", class:"text-red-800 hover:underline" %> by 50%.  With many pilots taking early retirement during the pandemic and increased demand for travel, there has never been a time like now to start training.</p>
+        <div class="opacity-0 duration-[1500ms] translate-y-24 text-center w-full flex flex-col items-start" x-intersect="$el.classList.add('opacity-100', 'translate-y-1', 'z-0')">
+          <%=link_to schedule_call_path do%>
+            <div class="bg-yellow-500 font-semibold hover:bg-yellow-400 hover:scale-105 text-white rounded-lg text-center py-2 px-5 transition-all duration-300">
+              PILOT CAREERS
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <!--Picture-->
+      <div class="w-full lg:w-1/2 lg:px-20 grid place-items-center">
+        <%= image_tag "thumbsuppilot.webp", alt:"airline pilot giving thumbs up", class: "" %>
+      </div>
+    </div>
+
+    <!--Step 3-->
+    <div class="flex flex-col lg:flex-row justify-center items-center lg:items-start pt-10 lg:py-10">
+      <!--Text-->
+      <div class="w-4/5 lg:w-1/2 lg:px-20 lg:pb-0 pb-20" x-data>
+        <h3 class="text-2xl font-bold pb-5 text-red-800">Travel and Leisure Reimagined</h3>
+        <p class="pb-5">Bring on a new meaning to "getting lunch."  With a piston single airplane, get lunch in Chicago or Memphis and be back at home later in the afternoon to watch the game. </p>
+        <p class="pb-5">Experience new towns and cities.  Cut travel time in half and then take a courtesy car to explore a new town.  Take your family and friends up in the sky and show them your hometown in a new perspective.</p>
+        <p class="pb-5">It all starts with a discovery flight.  Book today and learn more about how to start you aviation journey.</p>
+        
+        <div class="opacity-0 duration-[1500ms] translate-y-24 text-center w-full flex flex-col items-start" x-intersect="$el.classList.add('opacity-100', 'translate-y-1', 'z-0')">
+          <%=link_to schedule_call_path do%>
+            <div class="bg-yellow-500 font-semibold hover:bg-yellow-400 hover:scale-105 text-white rounded-lg text-center py-2 px-5 transition-all duration-300">
+              BOOK DISCOVERY FLIGHT
+            </div>
+          <% end %>
+        </div>
+        
+      </div>
+      <!--Picture-->
+      <div class="w-full lg:w-1/2 grid place-items-center">
+        <%= image_tag "womansmile.webp", alt:"Smiling woman in cockpit flying", class: "lg:w-1/2" %>
+      </div>
+    </div>
+
+    <!--Step 4-->
+    <div class="flex flex-col lg:flex-row-reverse justify-center items-center pt-10 lg:py-10 bg-slate-50">
+      <!--Text-->
+      <div class="w-4/5 lg:w-1/2 lg:px-20">
+        <h3 class="text-2xl font-bold pb-5">Still not sure?</h3>
+        <p class="pb-5">We understand you might still be looking for more information about us and how to begin pilot training.</p>
+        <p class="pb-5">That's why we've got a free booklet that explains how to start flight training.</p>
+        <p class="pb-5 font-semibold">
+        <%= link_to "Click HERE", checklist_path, class: "text-red-700 hover:underline"%> to get the free book mailed to you!  </p>
+        <p class="pb-5 italic">Please note, this book only scratches the surface in your aviation journey.  To learn more about pilot certificate requirements, aviation careers, and pilot opportunities, talk with one of our experienced certified flight instructors!</p>
+      </div>
+      <!--Picture-->
+      <div class="w-full lg:w-1/2 lg:px-20 hidden lg:grid place-items-center">
+        <%= image_tag "book-mockup.webp", alt: "Picture of our free how to be a pilot training guide"%>
+      </div>
+    </div>
     </div>
   </section>
   <%= render "shared/associations"%>
