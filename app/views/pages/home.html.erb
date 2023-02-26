@@ -401,14 +401,52 @@
     </div>
     </div>
   </section>
+
+  <%= render "shared/associations"%>
+  
   <section class="bg-red-900 text-white">
     <div class="flex flex-col lg:flex-row py-20">
-      <div class="lg:w-1/2 flex flex-col items-center justify-center px-5">
+      <div class="lg:w-1/2 flex flex-col items-center justify-center px-5" x-data>
         <h2 class="text-3xl lg:text-5xl font-gloock font-bold italic text-center">Gateway is the best <br>in flight safety and education</h2>
         <h3 class="text-xl font-semibold py-5">St. Louis Flight Training</h3>
         <p class="lg:w-3/4">
-          The best aviation team at Creve Coeur Airport (1HO).  Our knowledgeable and experienced instructors comprises of pilots with ATP, Instrument Instructor, and Certified Flight Instructor certification with a combined total of more than 70,000 hours of total flight time.
+          The best flight instruction at Creve Coeur Airport (1HO).  Our knowledgeable and experienced instructors comprises of pilots with ATP, Multi-Engine Instructor, Instrument Instructor, and Certified Flight Instructor certification with a combined total of more than 70,000 hours of total flight time.
         </p>
+        <div class="flex flex-col items-start">
+          <ul class="w-3/4 lg:pb-10 py-5">
+            <li class="pb-5">
+              <div class="flex flex-row opacity-0 duration-[1500ms] translate-x-0" x-intersect="$el.classList.add('opacity-100', 'translate-x-20', 'z-0')">
+                <div class="text-yellow-500 pr-3">&#9992;</div>
+                  Part 61 private pilot training
+              </div>
+            </li>
+            <li class="pb-5">
+              <div class="flex flex-row opacity-0 duration-[1500ms] translate-x-0" x-intersect="$el.classList.add('opacity-100', 'translate-x-20', 'z-0')" >
+                <div class="text-yellow-500 pr-3">&#9992;</div>
+                  Advanced training including instrument, commercial, multi-engine, and CFI
+              </div>
+            </li>
+            <li class="pb-5">
+              <div class="flex flex-row opacity-0 duration-[1500ms] translate-x-0" x-intersect="$el.classList.add('opacity-100', 'translate-x-20', 'z-0')" >
+                <div class="text-yellow-500 pr-3">&#9992;</div>
+                  Group and one on one ground school instruction
+              </div>
+            </li>
+            <li class="pb-5">
+              <div class="flex flex-row opacity-0 duration-[1500ms] translate-x-0" x-intersect="$el.classList.add('opacity-100', 'translate-x-20', 'z-0')" >
+                <div class="text-yellow-500 pr-3">&#9992;</div>
+                  Checkride preparation and instruction
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="opacity-0 duration-[1500ms] translate-y-24  lg:pl-16 text-center w-full flex flex-col items-start" x-intersect="$el.classList.add('opacity-100', 'translate-y-1', 'z-0')">
+          <%=link_to schedule_call_path do%>
+            <div class="bg-yellow-500 font-semibold hover:bg-yellow-400 hover:scale-105 text-white rounded-lg text-center py-2 px-5 transition-all duration-300">
+              PILOT TRAINING
+            </div>
+          <% end %>
+        </div>
       </div>
       <div class="lg:w-1/2 flex flex-col justify-center items-center">
         <%= turbo_frame_tag "frame2", class: "w-full" do %>
@@ -423,12 +461,59 @@
     </div>
 
     <div class="flex flex-col lg:flex-row-reverse pb-20">
-      <div class="lg:w-1/2 flex flex-col items-center justify-center px-5">
+      <div class="lg:w-1/2 flex flex-col items-center justify-center px-5" x-data>
         <h2 class="text-3xl lg:text-5xl font-gloock font-bold italic text-center">Meticulous Maintenance</h2>
         <h3 class="text-xl font-semibold py-5">St. Louis Aviation Maintenance</h3>
         <p class="lg:w-3/4">
-          The best aviation maintenance team at Creve Coeur Airport (1HO).  Our knowledgeable and experienced maintenance team comprises of mechanics with A&P and IA certification.  
+          The best aviation maintenance team at Creve Coeur Airport (1HO).  Our knowledgeable and experienced maintenance team comprises of mechanics with A&P and IA certification.
         </p>
+        <div class="flex flex-col items-start">
+          <ul class="lg:w-3/4 left-0 lg:pb-10 py-5">
+            <li class="pb-5">
+              <div class="flex flex-row opacity-0 duration-[1500ms] translate-x-0" x-intersect="$el.classList.add('opacity-100', 'translate-x-20', 'z-0')" >
+                <div class="text-yellow-500 pr-3">&#9992;</div>
+                  Single engine, multi-engine, cabin class, and turbo prop airplanes
+              </div>
+            </li>
+            <li class="pb-5">
+              <div class="flex flex-row opacity-0 duration-[1500ms] translate-x-0" x-intersect="$el.classList.add('opacity-100', 'translate-x-20', 'z-0')" >
+                <div class="text-yellow-500 pr-3">&#9992;</div>
+                  Annual inspections, TCM bore scope inspections, ADSB compliance
+              </div>
+            </li>
+            <li class="pb-5">
+              <div class="flex flex-row opacity-0 duration-[1500ms] translate-x-0" x-intersect="$el.classList.add('opacity-100', 'translate-x-20', 'z-0')" >
+                <div class="text-yellow-500 pr-3">&#9992;</div>
+                  Sheet metal repair, heater decay testing, air conditioner service, oxygen service
+              </div>
+            </li>
+            <li class="pb-5">
+              <div class="flex flex-row opacity-0 duration-[1500ms] translate-x-0" x-intersect="$el.classList.add('opacity-100', 'translate-x-20', 'z-0')" >
+                <div class="text-yellow-500 pr-3">&#9992;</div>
+                  Dynamic propeller balancing, TCM fuel set up, battery service, strut service, gear setup, weighing
+              </div>
+            </li>
+            <li class="pb-5">
+              <div class="flex flex-row opacity-0 duration-[1500ms] translate-x-0" x-intersect="$el.classList.add('opacity-100', 'translate-x-20', 'z-0')" >
+                <div class="text-yellow-500 pr-3">&#9992;</div>
+                  Avionics upgrades, maintenace, and service: COM, transponders, NAV, EFIS, GPS, EIS, ADSB
+              </div>
+            </li>
+            <li class="pb-5">
+              <div class="flex flex-row opacity-0 duration-[1500ms] translate-x-0" x-intersect="$el.classList.add('opacity-100', 'translate-x-20', 'z-0')" >
+                <div class="text-yellow-500 pr-3">&#9992;</div>
+                  Shuttle service, pick up and devivery service, electrical service
+              </div>
+            </li>
+          </ul>
+        </div>  
+         <div class="opacity-0 duration-[1500ms] translate-y-24 lg:pl-16 text-center w-full flex flex-col items-start" x-intersect="$el.classList.add('opacity-100', 'translate-y-1', 'z-0')">
+          <%=link_to schedule_call_path do%>
+            <div class="bg-yellow-500 font-semibold hover:bg-yellow-400 hover:scale-105 text-white rounded-lg text-center py-2 px-5 transition-all duration-300">
+              MAINTENANCE SERVICE
+            </div>
+          <% end %>
+        </div>
       </div>
       <div class="lg:w-1/2 flex flex-col justify-center items-center">
         <%= turbo_frame_tag "frame3", class: "w-full" do %>
@@ -436,14 +521,13 @@
             <div class="lg:w-4/5 mx-auto w-full aspect-vide bg-videothumbmaint bg-cover bg-center">
               <%= image_tag "youtube_embed_icon.webp", alt: "image placeholder for video", class: "lg:grayscale hover:grayscale-0 transition-all duration-500 "%>
             </div>
-            <h4 class="text-center italic text-sm">Brian Borton, operations manager, on avionics and upgrades to aircraft</h4>
+            <h4 class="text-center italic text-sm">Brian Borton, operations manager, on avionics and upgrades to the aircraft</h4>
           <% end %>
         <% end %>
       </div>
     </div>
     
   </section>
-  <%= render "shared/associations"%>
 </div>
 <!--CTA-->
 <%= render "shared/cta1"%>
