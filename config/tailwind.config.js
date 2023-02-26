@@ -36,7 +36,7 @@ module.exports = {
         },
       },
       backgroundImage : {
-        'head' : "url('cessnamountain.webp')",
+        'head' : "url('cta_banner_gateway.webp')",
         //'head' : "url('cessnalake.webp')",
         'headsys' : "url('cockpitblue2.webp')",
         'headsys2' : "url('dave.webp')",
