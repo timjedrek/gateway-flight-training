@@ -1,38 +1,37 @@
 <!--Footer-->
-<section class="w-full bg-blue-900 text-slate-100">
+<section class="w-full bg-red-900 text-slate-100">
   <div class="flex flex-col lg:flex-row justify-center items-start pt-10">
     <!--Logo and mission-->
     <div class="lg:w-1/4 flex flex-col justify-center lg:justify -start px-10">
-      <%= image_tag "rightruddermarketinglogo750white.webp", alt: "Right Rudder Marketing Logo White", class: "w-40"%>
+      <%= image_tag "gatewaylogo_white.webp", alt: "Gateway Logo White", class: "w-56"%>
       <p class="pt-7 lg:pr-0 pr-10">
-        We are a rapidly expanding pilot owned digital marketing agency working exclusively with flight schools throughout the United States. We're on a mission to help 100 flight schools double their student body and dominate their service area by 2025.
+        Safety in aviation through education.  We are a team of knowledgeable and expierenced aviators with a priority in safety.  Our mission is serve the St. Louis aviation community with our aviation knowledge and expertise.
       </p>
     </div>
     <!--Links-->
-    <div class="lg:w-1/4 flex flex-col justify-center pl-10 pr-8">
-      <h3 class="font-bold text-xl pt-10 pb-5 lg:pb-10 lg:hidden">Free Resources<br> and Information</h3>
-      <h3 class="font-bold text-xl pt-10 pb-5 lg:pb-10 hidden lg:block">Free Resources<br> and Information</h3>
+    <div class="lg:w-1/4 flex flex-col justify-center lg:pl-24 pl-10 pr-8">
+      <h3 class="font-bold text-xl pt-10 pb-5 lg:pb-10">Website Links</h3>
       <ul class="font-semibold ">
-        <li class="pb-3"><%= link_to schedule_call_path, class: "hover:underline" do %>FREE one on one consultation<%end%></li>        
-        <li class="pb-3"><%= link_to "https://rightruddermarketing.com/notams/5-tips-to-grow-your-flight-school", data: { turbo: false }, class: "hover:underline" do %>View tips to grow your school<%end%></li>
-        <li class="pb-3"><%= link_to webinars_path, data: { turbo: false }, class: "hover:underline" do %>Watch our FREE webinar<%end%></li>
-        <li class="pb-3"><%= link_to marketing_system_path, data: { turbo: false } , class: "hover:underline" do %>Flight School Marketing System<%end%></li>
-        <li class="pb-3"><%= link_to about_us_path, data: { turbo: false }, class: "hover:underline" do %>About Us<%end%></li>
-        <li class="pb-3"><%= link_to careers_path, data: { turbo: false }, class: "hover:underline" do %>Careers<%end%></li>
+        <li class="pb-3"><%= link_to schedule_call_path, class: "hover:underline" do %>Flight Training<%end%></li>        
+        <li class="pb-3"><%= link_to "https://rightruddermarketing.com/notams/5-tips-to-grow-your-flight-school", data: { turbo: false }, class: "hover:underline" do %>Maintenance<%end%></li>
+        <li class="pb-3"><%= link_to webinars_path, data: { turbo: false }, class: "hover:underline" do %>News and Announcements<%end%></li>
+        <li class="pb-3"><%= link_to marketing_system_path, data: { turbo: false } , class: "hover:underline" do %>About Us<%end%></li>
+        <li class="pb-3"><%= link_to about_us_path, data: { turbo: false }, class: "hover:underline" do %>Contact Us<%end%></li>
+        <li class="pb-3"><%= link_to careers_path, data: { turbo: false }, class: "hover:underline" do %>Flight Scheduler<%end%></li>
       </ul>
     </div>
     <!--Contact-->
     <div class="lg:w-1/4 flex flex-col justify-center lg:px-3 pl-10">
-      <h3 class="font-bold text-xl pt-10 pb-3 lg:pt-12 lg:pb-10">Contact Us</h3>
-      <ul class="py-5 w-full">
+      <h3 class="font-bold text-xl pt-10 pb-3  lg:pb-10">Contact Us</h3>
+      <ul class="pb-5 w-full">
         <li class="pb-5">
           <div class="flex flex-row">
             <div class="pr-3">
               <%= image_tag "pin.webp", alt: "map pin", class: "h-5 invert pt-1"%>
             </div>
-            770 Market Street<br>
-            Suite 2026<br>
-            Farmington, MO 63640<br>
+            14301 Creve Coeur Airport Road<br>
+            Hangar N3<br>
+            Maryland Heights, MO 63146<br>
           </div>
         </li>
         <li class="pb-5">
@@ -40,44 +39,22 @@
             <div class="pr-3">
               <%= image_tag "phone.webp", alt: "phone icon", class: "h-5 invert pt-1" %>
             </div>
-            <%= link_to "1-314-358-2100", "tel:1-314-358-2100" %>
+            <%= link_to "1-314-780-7899", "tel:1-314-780-7899" %>
           </div>
         </li>
         <li class="pb-5">
           <div class="flex flex-row">
             <div class="pr-3"><%= image_tag "email.webp", alt: "email icon", class: "h-5 invert pt-1 object-contain" %></div>
             <p>
-              <%= mail_to "info@rightruddermarketing.com", class: "hover:underline"%>
+              <%= mail_to "info@gatewayflight.com", class: "hover:underline"%>
             </p>
-          </div>
-        </li>
-        <li class="pb-5">
-          <div class="flex flex-row">
-            <div class="pr-3">
-              <%= image_tag "support.webp", alt:"support headphones icon", class: "h-5 invert pt-1" %>
-            </div>
-              <%= link_to "Support Ticket", root_path, class: "hover:underline"%>
           </div>
         </li>
       </ul>
     </div>
     <!--News Letter-->
-    <div class="lg:w-1/4 flex flex-col justify-center px-5 lg:mr-5">
-      <h3 class="font-bold text-xl pt-10 pb-3 lg:pt-12 lg:pb-14">Newsletter</h3>
-      <div class="flex flex-row items-center w-full">
-        <!--
-        <input type="email" id="email" pattern=".+@globex\.com" required class="text-black w-2/3" placeholder="name@email.com">
-        <%=link_to root_path, class: "font-semibold bg-orange-500 hover:bg-orange-600 transition-all duration-300 text-xl text-white rounded-lg text-center py-2 px-5 ml-3 mr-2" do%>
-          Join
-        <%end%>
-        -->
-        <%= turbo_frame_tag "frame3", class: "w-full" do %>
-          <%= render "newsletter_emails/form" %>
-          <p class="py-10">
-          Sign up for our latest news and articles.  We will not send you spam nor share your information with other third parties.
-        </p>
-        <% end%>
-      </div>
+    <div class="lg:w-1/4 w-full flex flex-col mt-10 lg:my-10 justify-center lg:px-5 lg:mr-5">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199216.56948954644!2d-90.7874590671875!3d38.7233441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df2c3d6da8c597%3A0x858179118d0ef2b8!2sGateway%20Flight%20Training!5e0!3m2!1sen!2sus!4v1677399534070!5m2!1sen!2sus" class="aspect-video h-72" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>
